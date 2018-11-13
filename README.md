@@ -2,5 +2,7 @@
 Learning Data Structure in Algorithm
 
 # Fibonacci: \
-    Gist: https://gist.github.com/jn8029/31f897cfcbd3dd56df273694b557b39e \
-    Medium: TBA
+    Medium: https://tinyurl.com/y7btrx2f
+
+# Greatest Common Divider: \
+    Medium: https://tinyurl.com/y9twoym6
