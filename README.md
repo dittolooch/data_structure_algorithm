@@ -1,6 +1,8 @@
 # Data Structure & Algorithms
 Learning Data Structure in Algorithm
 
-## Fibonacci Number: [Medium](https://tinyurl.com/y7btrx2f)
+## Fibonacci Number: [Link](https://tinyurl.com/y7btrx2f)
 
-## Greatest Common Divider: [Medium](https://tinyurl.com/y9twoym6)
+## Greatest Common Divider: [Link](https://tinyurl.com/y9twoym6)
+
+## Big-O Notation: [Link](https://tinyurl.com/y9tzg6sh)
