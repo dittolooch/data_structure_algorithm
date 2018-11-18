@@ -6,6 +6,7 @@ using std::vector;
 using std::cin;
 using std::cout;
 
+
 unsigned long long int MaxPairwiseProduct(const vector<unsigned long int>& numbers) {
   unsigned long int max_index = 0;
   unsigned long int max = 0;
