@@ -5,17 +5,32 @@
 using std::vector;
 using std::swap;
 
-int partition2(vector<int> &a, int l, int r) {
-  int x = a[l];
-  int j = l;
-  for (int i = l + 1; i <= r; i++) {
-    if (a[i] <= x) {
-      j++;
-      swap(a[i], a[j]);
+typedef struct {
+  int low;
+  int high;
+} partition_result;
+
+
+partition_result partition2(vector<int> &a, int l, int r) {
+  int pivot = a[l];
+  int low_holder = l-1;
+  int high_holder = r +1;
+  for (int i = l; i < high_holder; i++) {
+    if (a[i] < pivot) {
+      low_holder++;
+      swap(a[i], a[low_holder]);
+
+    } else if (a[i]> pivot){
+      high_holder--;
+      swap(a[i],a[high_holder]);
+
+      i--;
     }
   }
-  swap(a[l], a[j]);
-  return j;
+  partition_result result;
+  result.low = low_holder;
+  result.high = high_holder;
+  return result;
 }
 
 void randomized_quick_sort(vector<int> &a, int l, int r) {
@@ -25,10 +40,16 @@ void randomized_quick_sort(vector<int> &a, int l, int r) {
 
   int k = l + rand() % (r - l + 1);
   swap(a[l], a[k]);
-  int m = partition2(a, l, r);
+  partition_result result = partition2(a, l, r);
+  // std::cout <<"after partition..."<<std::endl;
+  // for (size_t i = 0; i < a.size(); ++i) {
+  //   std::cout << a[i] << ' ';
+  // }
 
-  randomized_quick_sort(a, l, m - 1);
-  randomized_quick_sort(a, m + 1, r);
+
+
+  randomized_quick_sort(a, l, result.low);
+  randomized_quick_sort(a, result.high, r);
 }
 
 int main() {
