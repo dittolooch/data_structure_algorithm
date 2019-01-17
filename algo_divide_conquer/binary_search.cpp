@@ -3,20 +3,6 @@
 #include <vector>
 
 using std::vector;
-// binary search
-// Function BinarySearch(vector a, key, lo, hi)
-// If a.size()==0:
-//     Return -1
-// Else:
-//     mid_index = (hi+lo) / 2
-//     mid_element = a[mid_index]
-//     If mid_element > key:
-//        Return BinarySearch(a, key, lo , mid_index-1)
-//     Else if mid_elelemnt<key
-//        Return BinarySearch(a, key, mid_index+1,  hi)
-//     Else if mid_elelemt == key
-//         Return mid _index
-
 
 int binary_search_helper(const vector<int> &a, int key, int lo, int hi) {
   int answer;
@@ -41,6 +27,7 @@ int binary_search(const vector<int> &a, int key) {
   int answer = binary_search_helper(a, key, 0, a.size()-1);
   return answer;
 }
+
 int main() {
   int n;
   std::cin >> n;
@@ -55,7 +42,6 @@ int main() {
     std::cin >> b[i];
   }
   for (int i = 0; i < m; ++i) {
-    //replace with the call to binary_search when implemented
     std::cout << binary_search(a, b[i]) << ' ';
   }
 }
