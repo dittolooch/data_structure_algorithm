@@ -6,11 +6,11 @@ The [Data Structure & Algorithm Specialization](https://www.coursera.org/special
 The Specialization includes 6 courses, namely:
 
 * Algorithm Toolbox
-2. Data Structure
-3. Algorithms on Graphs
-4. Algorithms on Strings
-5. Advanced Algorithms and Complexity
-6. Genome Assembly Programming Challenge
+* Data Structure
+* Algorithms on Graphs
+* Algorithms on Strings
+* Advanced Algorithms and Complexity
+* Genome Assembly Programming Challenge
 
 
 
