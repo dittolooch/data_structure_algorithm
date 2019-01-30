@@ -23,6 +23,7 @@ The basic pattern of a greedy algorithm starts with picking a safe choice to tac
 #### Dynamic Programming
 ## Data Structures
 #### Stack
+An abstract data type that allows adding and removing data on a Last-In-First-Out(LIFO) basis. It can be implemented with an array or linked-list. 
 #### Queue
 #### Tree
 #### Heap
